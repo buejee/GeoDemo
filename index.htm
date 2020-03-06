@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>map</title>
+		<style>
+			html,body{height:100%;width:100%;padding:0;margin:0;}
+			#root{height:100%;}
+		</style>
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=3.0&ak=YcP5EukTHUoFR3oObxdfBHTfA3EUgHET"></script>
+	</head>
+	<body>
+		<div id="root"></div>
+		<script type="text/javascript">
+			window.onload = function(){
+				var map = new BMap.Map("root");
+				map.centerAndZoom(new BMap.Point(116.404,39.915),15)
+				map.enableScrollWheelZoom()
+			}
+			
+			function getMessage(latitude,longitude){
+				return ("纬度:"+latitude+",经度:"+longitude);
+			}
+		</script>
+	</body>
+</html>
