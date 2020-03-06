@@ -1,5 +1,5 @@
 ### MFC CWegPage call javascript function
-#### 1 create a index.html
+#### 1 create index.html
 #### 2 python -m http.server
 #### 4 open browser for a test : url-> http://127.0.0.1:8000/index.htm
 #### 5 vc++6.0 -> create a project of MFC Application Wizard [exe]
